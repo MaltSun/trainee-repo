@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <title>Task 1</title>
   </head>
   <body>
@@ -28,25 +29,19 @@
     <main>
       <aside>
         <div>
-          <li class="active"><img src="./Images/ui-71.png" alt="" /><a href="">Home</a></li>
-          <li><img src="./Images/ui-01.png" alt="" /><a>Trending</a></li>
-          <li>
-            <img src="./Images/ui-45.png" alt="" /><a>Subscription</a>
+          <li class="active">
+            <img src="./Images/ui-71.png" alt="" /><a href="">Home</a>
           </li>
+          <li><img src="./Images/ui-01.png" alt="" /><a>Trending</a></li>
+          <li><img src="./Images/ui-45.png" alt="" /><a>Subscription</a></li>
         </div>
 
         <div id="history">
           <li><img src="./Images/library.png" alt="" /><a>Library</a></li>
           <li><img src="./Images/history.png" alt="" /><a>History</a></li>
-          <li>
-            <img src="./Images/tech-25.png" alt="" /><a>Watch later</a>
-          </li>
-          <li>
-            <img src="./Images/ui-02.png" alt="" /><a>Favourites</a>
-          </li>
-          <li>
-            <img src="./Images/ui-03.png" alt="" /><a>Liked videos</a>
-          </li>
+          <li><img src="./Images/tech-25.png" alt="" /><a>Watch later</a></li>
+          <li><img src="./Images/ui-02.png" alt="" /><a>Favourites</a></li>
+          <li><img src="./Images/ui-03.png" alt="" /><a>Liked videos</a></li>
           <li><img src="./Images/ui-80.png" alt="" /><a>Music</a></li>
           <li><img src="./Images/tech-02.png" alt="" /><a>Games</a></li>
           <li>
@@ -56,20 +51,44 @@
 
         <div id="subscriptions">
           <h3>Subscriptions</h3>
-          <li><img src="./Images/Oval.png" alt="channelIcon" /><span>Gussie Singleton</span></li>
-          <li><img src="./Images/Oval.png" alt="channelIcon" /><span>Nora Francis</span></li>
-          <li><img src="./Images/Oval.png" alt="channelIcon" /><span>Belle Briggs</span></li>
-          <li><img src="./Images/Oval.png" alt="channelIcon" /><span>Eunice Cortez</span></li>
-          <li><img src="./Images/Oval.png" alt="channelIcon" /><span>Emma Hanson</span></li>
-          <li><img src="./Images/Oval.png" alt="channelIcon" /><span>Leah Berry</span></li>
+          <li>
+            <img src="./Images/Oval.png" alt="channelIcon" /><span
+              >Gussie Singleton</span
+            >
+          </li>
+          <li>
+            <img src="./Images/Oval.png" alt="channelIcon" /><span
+              >Nora Francis</span
+            >
+          </li>
+          <li>
+            <img src="./Images/Oval.png" alt="channelIcon" /><span
+              >Belle Briggs</span
+            >
+          </li>
+          <li>
+            <img src="./Images/Oval.png" alt="channelIcon" /><span
+              >Eunice Cortez</span
+            >
+          </li>
+          <li>
+            <img src="./Images/Oval.png" alt="channelIcon" /><span
+              >Emma Hanson</span
+            >
+          </li>
+          <li>
+            <img src="./Images/Oval.png" alt="channelIcon" /><span
+              >Leah Berry</span
+            >
+          </li>
         </div>
 
         <div id="setting">
-          <img src="./Images/ui-46.png" alt="">
+          <img src="./Images/ui-46.png" alt="" />
           <span>Setting</span>
         </div>
       </aside>
-      <div>
+      <div class="main">
         <section>
           <div class="channelName">
             <div>
@@ -78,53 +97,100 @@
             </div>
 
             <span>
-              <button id="leftArr">
-                <img src="./Images/Left.png" alt="" /></button
-              ><button><img src="./Images/Right.png" alt="" /></button
-            ></span>
+              <button id="prevArr">&lt;</button>
+              <button id="nextArr">&gt;</button>
+            </span>
           </div>
-          <div class="videoPlayer">
-            <div>
-              <img src="./Images/Cover.png" alt="" />
-              <h3>A Drief History Of Creation</h3>
-              <span>80k views</span><span>3 days ago</span
-              ><span>Dollier Blair</span>
-            </div>
-            <div>
-              <img src="./Images/Cover (5).png" alt="" />
-              <h3>Selecting The Right Hotel</h3>
-              <span>123k views</span><span>1 month ago</span
-              ><span>Dollier Blair</span>
-            </div>
-            <div>
-              <img src="./Images/Cover (1).png" alt="" />
-              <h3>Asteroids</h3>
-              <span>43k views</span><span>12 days ago</span
-              ><span>Dollier Blair</span>
-            </div>
-            <div>
-              <img src="./Images/Cover (2).png" alt="" />
-              <h3>Telescopes 101</h3>
-              <span>1k views</span><span>6 months ago</span
-              ><span>Dollier Blair</span>
-            </div>
-            <div>
-              <img src="./Images/Cover (3).png" alt="" />
-              <h3>Medical Care Is Just</h3>
-              <span>18k views</span><span>2 days ago</span
-              ><span>Dollier Blair</span>
-            </div>
-            <div>
-              <img src="./Images/Cover (4).png" alt="" />
-              <h3>Moon Gazing</h3>
-              <span>67k views</span><span>4 months ago</span
-              ><span>Dollier Blair</span>
-            </div>
+          <div id="container" class="container">
+            <slider-scroll id="videoSlider" class="slider-scroll videoSlider">
+              <div class="slide">
+                <img src="./Images/Cover.png" alt="" />
+                <span class="timeCard">4:15</span>
+                <div>
+                  <h3>A Brief History Of Creation</h3>
+                  <span>80k views</span>
+                  <span>3 days ago</span
+                  ><span>Dollier Blair</span>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./Images/Cover (5).png" alt="" />
+                <span class="timeCard">8:00</span>
+
+                <h3>Selecting The Right Hotel</h3>
+                <span>123k views</span><span>1 month ago</span
+                ><span>Dollier Blair</span>
+              </div>
+              <div class="slide">
+                <img src="./Images/Cover (1).png" alt="" />
+                <span class="timeCard">5:32</span>
+                <h3>Asteroids</h3>
+                <span>43k views</span><span>12 days ago</span
+                ><span>Dollier Blair</span>
+              </div>
+              <div class="slide">
+                <img src="./Images/Cover (2).png" alt="" />
+                <span class="timeCard">6:40</span>
+                <h3>Telescopes 101</h3>
+                <span>1k views</span><span>6 months ago</span
+                ><span>Dollier Blair</span>
+              </div>
+              <div class="slide">
+                <img src="./Images/Cover (3).png" alt="" />
+                <span class="timeCard">1:45</span>
+                <h3>Medical Care Is Just</h3>
+                <span>18k views</span><span>2 days ago</span
+                ><span>Dollier Blair</span>
+              </div>
+              <div class="slide">
+                <img src="./Images/Cover (1).png" alt="" />
+                <span class="timeCard">1:45</span>
+                <h3>Moon Gazing</h3>
+                <span>67k views</span><span>4 months ago</span
+                ><span>Dollier Blair</span>
+              </div>
+              <div class="slide">
+                <img src="./Images/Cover.png" alt="" />
+                <span class="timeCard">9:13</span>
+                <h3>A Brief History Of Creation</h3>
+                <span>80k views</span><span>3 days ago</span
+                ><span>Dollier Blair</span>
+              </div>
+              <div class="slide">
+                <img src="./Images/Cover (5).png" alt="" />
+                <span class="timeCard">9:13</span>
+                <h3>Selecting The Right Hotel</h3>
+                <span>123k views</span><span>1 month ago</span
+                ><span>Dollier Blair</span>
+              </div>
+              <div class="slide">
+                <img src="./Images/Cover (1).png" alt="" />
+                <span class="timeCard">9:13</span>
+                <h3>Asteroids</h3>
+                <span>43k views</span><span>12 days ago</span
+                ><span>Dollier Blair</span>
+              </div>
+            </slider-scroll>
           </div>
         </section>
-        <section></section>
+        <section>
+          <h2>Recommended</h2>
+        </section>
         <section></section>
       </div>
     </main>
+    <script type="module" src="./index.js"></script>
+    <script>
+      const rightArr = document.getElementById("nextArr");
+      const leftArr = document.getElementById("prevArr");
+      const scrollSlider = document.getElementById("videoSlider");
+
+      leftArr.addEventListener("click", () => {
+        scrollSlider.scrollToNext(100);
+      });
+      rightArr.addEventListener("click", () => {
+        scrollSlider.scrollToRight(100);
+      });
+    </script>
   </body>
 </html>

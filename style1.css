@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 :root {
   --main-font-family: Mulish;
   --main-font-weight: 700;
@@ -14,7 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 98%;
   max-width: 1900px;
   background: rgb(253, 239, 239);
 }
@@ -24,7 +27,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   padding: 10px;
-  padding-left: 55px;
+  margin-left: 25px;
 }
 #humbMenu {
   width: 20px;
@@ -37,8 +40,8 @@ header {
   margin-right: 60px;
 }
 header input {
-  width: 800px;
-  height: 40px;
+  width: 830px;
+  height: 47px;
   background-color: #eeededbd;
   border-color: white;
   border-radius: 30px;
@@ -46,33 +49,40 @@ header input {
   font-family: var(--main-font-family);
   font-weight: var(--normal-font-weight);
   font-size: var(--normal-font-size);
-  border: 1px solid white;     
-  box-shadow: none;          
-  outline: none;       
+  border: 1px solid white;
+  box-shadow: none;
+  outline: none;
 }
 
 header input:active {
   border: 1px solid rgb(8, 7, 7);
- transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
 }
 header input:hover {
- border: 1px solid rgb(116, 115, 115);
- transition: border-color 0.2s ease;
+  border: 1px solid rgb(116, 115, 115);
+  transition: border-color 0.2s ease;
 }
 
 header span {
   display: flex;
   gap: 50px;
-  margin-left: 510px;
+  margin-left: 505px;
+}
+header span img {
+  height: 20px;
 }
 #channelIcon {
   margin-left: 55px;
 }
-#humbMenu:hover, #channelIcon:hover, #YouTubeLogo:hover{
-cursor: pointer;
- transition: text-decoration 0.3s ease;
+#humbMenu:hover,
+#channelIcon:hover,
+#YouTubeLogo:hover {
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
 }
-
+/* .channelName{
+  
+} */
 h2,
 .channelName span {
   font-family: var(--main-font-family);
@@ -82,44 +92,40 @@ h2,
   letter-spacing: var(--main-letter-spacing);
   color: var(--main-color);
 }
+
 h3 {
   font-family: var(--main-font-family);
   font-weight: var(--main-font-weight);
   font-size: var(--normal-font-size);
   line-height: var(--main-line-height);
   letter-spacing: var(--main-letter-spacing);
+ 
 }
+/* интрестинг решение */
 span {
   color: #c2c2c2;
 }
-.videoPlayer {
-  display: flex;
-  flex-direction: row;
-  padding: 0 10px;
-  gap: 40px;
-}
+
 main aside {
   width: 170px;
-  padding: 26px 25px;
+  padding: 26px 20px;
   height: 100vh;
 }
-aside div{
+aside div {
   text-decoration: none;
   list-style: none;
   font-family: var(--main-font-family);
   font-weight: var(--normal-font-weight);
   font-size: var(--normal-font-size);
   letter-spacing: var(--main-letter-spacing);
-
-  margin-left: 12px;
 }
 aside div li,
 #subscriptions li {
   line-height: 47px;
-
 }
 aside div li img,
-#subscriptions img, #setting img {
+#subscriptions img,
+#setting img {
   margin-right: 13px;
 }
 #history {
@@ -127,9 +133,9 @@ aside div li img,
 }
 #subscriptions {
   margin-top: 60px;
-  width:170px
+  width: 170px;
 }
-#subscriptions h3{
+#subscriptions h3 {
   margin-bottom: 30px;
   font-size: 18px;
 }
@@ -137,45 +143,133 @@ aside div li img,
   width: 26px;
   height: 26px;
 }
-#setting{
+#setting {
   margin-top: 98px;
 }
-aside li:hover{
-text-decoration: underline;
-text-decoration-color: #8c8b8b;
+aside li:hover {
+  text-decoration: underline;
+  text-decoration-color: #8c8b8b;
 }
-aside li a:active, .active a{
-text-decoration: underline;
-text-decoration-color: red;
-color: red
+aside li a:active,
+.active a {
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: red;
 }
-.active a{
+.active a {
   text-decoration: none;
 }
-.active:hover{
+.active:hover {
   text-decoration-color: red;
 }
 main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
 }
+.main {
+  padding-left: 50px;
+  padding-top: 15px;
+}
 .channelName {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 0px;
+  padding: 22px  67px 22px 0px;
+  padding-right: 43px;
   gap: 80%;
 }
 
-.channelName span,
 .channelName div {
   gap: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-button {
-  border: none;
-  background: none;
+
+.channelName button {
+  border: 1px solid white;
+  background: rgb(154, 149, 149);
+  color: white;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: bold;
+}
+.container {
+  width: 1640px;
+  flex-direction: row;
+  padding: 0 15px;
+}
+.slider-scroll {
+  display: flex;
+scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  }
+  .slider-scroll::-webkit-scrollbar{
+    display: none;
+  }
+.slider-scroll > *{
+scroll-snap-align: start;
+}
+.videoSlider{
+  gap: 18px;
+}
+.slide {
+  flex: 0 0 calc((100% / 5.5) - 20px);
+  box-sizing: border-box;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.slider img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+.slide span{
+  font-size: 13px;
+  font-family: var(--main-font-family);
+}
+.slide h3{
+ margin-top: 7px;
+ margin-bottom: 7px
+}
+#prevArr:hover, #nextArr:hover{
+ background: rgb(12, 5, 5);
+}
+#prevArr:active, #nextArr:active{
+ background: rgb(47, 46, 46);
+}
+.slide {
+  position: relative;
+
+}
+.slide .timeCard{
+  position: absolute;
+  right: 25px;
+  bottom: 74px;
+
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.441);
+  border-radius: 10px;
+
+  width: 47px;
+  height: 24px;
+
+  font-size: 14px; 
+  color: white;
+  line-height: 100%;
+  font-family: var(--main-font-family);
+    text-align: center;
 }

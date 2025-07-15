@@ -175,7 +175,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 22px 80px 22px 0px;
+  padding: 22px 80px 17px 5px;
   gap: 80%;
 }
 
@@ -191,7 +191,7 @@ main {
 }
 .channelName button,
 #recommendationPrevArr,
-#recommendationNextArr {
+#recommendationNextArr, #prevRecArr, #nextRecArr {
   border: 1px solid white;
   background: rgb(154, 149, 149);
   color: white;
@@ -224,9 +224,6 @@ main {
 .slider-scroll > * {
   scroll-snap-align: start;
 }
-.videoSlider {
-  gap: 18px;
-}
 .slide {
   flex: 0 0 calc((100% / 5.5) - 20px);
   box-sizing: border-box;
@@ -235,10 +232,14 @@ main {
   min-width: 0;
 }
 
-.slider img {
+.slide img {
   width: 100%;
   display: block;
   border-radius: 4px;
+  object-fit: cover;
+  border-radius:15px;
+  height: 150px;
+
 }
 .slide span {
   font-size: 13px;
@@ -246,7 +247,7 @@ main {
 }
 .slide h3,
 .recommendationSlide h3 {
-  margin-top: 7px;
+  margin-top: 10px;
   margin-bottom: 7px;
   cursor: pointer;
 }
@@ -265,7 +266,8 @@ main {
 #prevArr:hover,
 #nextArr:hover,
 #recommendationNextArr:hover,
-#recommendationPrevArr:hover {
+#recommendationPrevArr:hover,
+#prevRecArr:hover, #nextRecArr:hover {
   background: rgb(12, 5, 5);
   transition: background-color 0.2s ease;
   cursor: pointer;
@@ -273,7 +275,8 @@ main {
 #prevArr:active,
 #nextArr:active,
 #recommendationNextArr:active,
-#recommendationPrevArr:active {
+#recommendationPrevArr:active,
+#prevRecArr:active, #nextRecArr:active {
   background: rgb(47, 46, 46);
   transition: background-color 0.2s ease;
   cursor: pointer;
@@ -298,8 +301,8 @@ main {
   text-align: center;
 }
 .slide .timeCard {
-  right: 20px;
-  bottom: 74px;
+  right: 23px;
+  bottom: 72px;
 
   height: 24px;
   font-size: 14px;
@@ -330,13 +333,17 @@ main {
   justify-content: space-between;
   padding: 0px 105px 0px 20px;
 }
-  .recommendation div{
-    gap: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-   
+.recommendation div, .channelName > span {
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+ .channelName > span{
+  padding-top: 25px;
+  padding-right: 5px;
+ }
+
 .recommendationSlider {
   gap: 45px;
   width: 100%;
@@ -346,17 +353,20 @@ main {
   width: 100%;
 }
 .recommendationSlide {
-  flex: 0 0 calc(100% / 3);
+  flex: 0 0 calc((100% / 3));
   box-sizing: border-box;
   border-radius: 8px;
   min-width: 0;
 }
 
-.recomendationSlide img {
+.recommendationSlide img {
   border-radius: 20px;
+  width:100%;
+  height: 250px;
+  object-fit: cover;
 }
 .recommendationSection {
-  margin-top: 18px;
+  margin-top: 20px;
   padding-left: 5px;
   font-family: var(--main-font-family);
 }
@@ -372,5 +382,62 @@ main {
   font-size: var(--main-font-size);
   margin-top: 5px;
   margin-bottom: 10px;
-  
+}
+
+.recChannel {
+  width: 100%;
+  margin-top: 20px;
+}
+.recMeta {
+  display: flex;
+  padding: 20px 105px 13px 25px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.subscription > button{
+  background: red;
+  border-radius: 18px;
+  border: solid 1px transparent;
+
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  color: white;
+  padding: 10px 15px;
+
+  margin-right: 40px;
+}
+.sliderButton {
+  display: flex;
+  gap: 8px; 
+  align-items: center
+}
+.Name{
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  color: var(--main-color)
+}
+.recChannelName{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center
+}
+.recChannelName img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.recChannelName span{
+  font-family: var(--main-font-family);
+
 }

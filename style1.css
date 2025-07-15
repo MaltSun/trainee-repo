@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 98%;
+  width: 100%;
   max-width: 1900px;
   background: rgb(253, 239, 239);
 }
@@ -80,9 +80,7 @@ header span img {
   cursor: pointer;
   transition: text-decoration 0.3s ease;
 }
-/* .channelName{
-  
-} */
+
 h2,
 .channelName span {
   font-family: var(--main-font-family);
@@ -93,13 +91,13 @@ h2,
   color: var(--main-color);
 }
 
-h3 {
+h3,
+a {
   font-family: var(--main-font-family);
   font-weight: var(--main-font-weight);
   font-size: var(--normal-font-size);
   line-height: var(--main-line-height);
   letter-spacing: var(--main-letter-spacing);
- 
 }
 /* интрестинг решение */
 span {
@@ -177,8 +175,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 22px  67px 22px 0px;
-  padding-right: 43px;
+  padding: 22px 80px 22px 0px;
   gap: 80%;
 }
 
@@ -188,8 +185,13 @@ main {
   align-items: center;
   justify-content: center;
 }
-
-.channelName button {
+.channelName div img:hover,
+.channelName div span:hover {
+  cursor: pointer;
+}
+.channelName button,
+#recommendationPrevArr,
+#recommendationNextArr {
   border: 1px solid white;
   background: rgb(154, 149, 149);
   color: white;
@@ -201,32 +203,33 @@ main {
   font-size: 18px;
   font-weight: bold;
 }
-.container {
+.container,
+.recommendationContainer {
   width: 1640px;
   flex-direction: row;
   padding: 0 15px;
 }
 .slider-scroll {
   display: flex;
-scroll-behavior: smooth;
+
+  scroll-behavior: smooth;
   overflow-y: hidden;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  }
-  .slider-scroll::-webkit-scrollbar{
-    display: none;
-  }
-.slider-scroll > *{
-scroll-snap-align: start;
 }
-.videoSlider{
+.slider-scroll::-webkit-scrollbar {
+  display: none;
+}
+.slider-scroll > * {
+  scroll-snap-align: start;
+}
+.videoSlider {
   gap: 18px;
 }
 .slide {
   flex: 0 0 calc((100% / 5.5) - 20px);
   box-sizing: border-box;
-  background: #f9f9f9;
   padding: 10px;
   border-radius: 8px;
   min-width: 0;
@@ -237,39 +240,137 @@ scroll-snap-align: start;
   display: block;
   border-radius: 4px;
 }
-.slide span{
+.slide span {
   font-size: 13px;
   font-family: var(--main-font-family);
 }
-.slide h3{
- margin-top: 7px;
- margin-bottom: 7px
+.slide h3,
+.recommendationSlide h3 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  cursor: pointer;
 }
-#prevArr:hover, #nextArr:hover{
- background: rgb(12, 5, 5);
+.slide h3:hover,
+.recommendationSlide h3:hover {
+  color: red;
+  text-decoration: underline;
+  transition: color 0.2s easy;
 }
-#prevArr:active, #nextArr:active{
- background: rgb(47, 46, 46);
+.slide h3:active,
+.recommendationSlide h3:active {
+  color: red;
+  text-decoration: underline;
+  transition: color 0.2s easy;
 }
-.slide {
+#prevArr:hover,
+#nextArr:hover,
+#recommendationNextArr:hover,
+#recommendationPrevArr:hover {
+  background: rgb(12, 5, 5);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+#prevArr:active,
+#nextArr:active,
+#recommendationNextArr:active,
+#recommendationPrevArr:active {
+  background: rgb(47, 46, 46);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.slide,
+.recommendationSlide {
   position: relative;
-
 }
-.slide .timeCard{
-  position: absolute;
-  right: 25px;
-  bottom: 74px;
 
-  padding: 5px;
-  background: rgba(0, 0, 0, 0.441);
-  border-radius: 10px;
+.timeCard {
+  position: absolute;
 
   width: 47px;
-  height: 24px;
 
-  font-size: 14px; 
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.256);
+  border-radius: 13px;
+
   color: white;
   line-height: 100%;
   font-family: var(--main-font-family);
-    text-align: center;
+  text-align: center;
+}
+.slide .timeCard {
+  right: 20px;
+  bottom: 74px;
+
+  height: 24px;
+  font-size: 14px;
+}
+.recommendationSlide .timeCard {
+  right: 5px;
+  bottom: 62px;
+
+  height: 24px;
+  font-size: 14px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.dateAndViews {
+  margin-right: 12px;
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  padding: 0px 105px 0px 20px;
+}
+  .recommendation div{
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+   
+.recommendationSlider {
+  gap: 45px;
+  width: 100%;
+}
+.videoSlider {
+  gap: 18px;
+  width: 100%;
+}
+.recommendationSlide {
+  flex: 0 0 calc(100% / 3);
+  box-sizing: border-box;
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.recomendationSlide img {
+  border-radius: 20px;
+}
+.recommendationSection {
+  margin-top: 18px;
+  padding-left: 5px;
+  font-family: var(--main-font-family);
+}
+.recommendationSection .container {
+  padding-left: 18px;
+  padding-top: 10px;
+}
+.recommendationSlide span {
+  font-size: 13px;
+}
+.recommendation h3 {
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  
 }

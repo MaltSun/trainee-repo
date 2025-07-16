@@ -19,7 +19,6 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1900px;
-  background: rgb(253, 239, 239);
 }
 header {
   width: 100%;
@@ -225,9 +224,9 @@ main {
   scroll-snap-align: start;
 }
 .slide {
-  flex: 0 0 calc((100% / 5.5) - 20px);
+  flex: 0 0 calc((100% / 5.5) - 40px);
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 0px;
   border-radius: 8px;
   min-width: 0;
 }
@@ -301,7 +300,7 @@ main {
   text-align: center;
 }
 .slide .timeCard {
-  right: 23px;
+  right: 10px;
   bottom: 72px;
 
   height: 24px;

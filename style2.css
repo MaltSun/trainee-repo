@@ -1,0 +1,217 @@
+@import "./style1.css";
+
+.channelBase {
+  margin: 0 auto;
+  width: 100%;
+  padding: 18px 30px 0px 73px;
+}
+.channelBase > img {
+  width: 100%;
+  border-radius: 13px;
+  height: 280px;
+  object-fit: cover;
+}
+.channelHeadBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 0px 22px;
+}
+.channelHead {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+.channelHead > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+.channelHead strong {
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-family);
+
+}
+.channelHead span {
+  font-family: var(--main-font-family);
+  font-size: var(--normal-font-size);
+  font-size: 13px;
+  font-weight: var(--normal-font-weight);
+}
+
+.channelActions button {
+  background: red;
+  border-radius: 25px;
+  border: solid 1px transparent;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+
+  margin-left: 15px;
+
+  font-size: 16px;
+  font-family: var(--main-font-family);
+}
+
+.mainBlock {
+  width: 100%;
+  display: flex;
+  gap: 47px;
+}
+.previewVideoBlock {
+  width: 80%;
+  padding-right: 15px;
+}
+
+.channelTools {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+.channelTools a {
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+.channelTools .active {
+  color: red;
+  text-decoration: underline;
+}
+.channelTools a:hover {
+  text-decoration: underline;
+  color: grey;
+  transition: text-decoration 0.2s ease;
+}
+.channelTools a:active {
+  text-decoration: underline;
+  color: black;
+  transition: text-decoration 0.2s ease;
+}
+.mainVideo {
+  padding: 62px 0px 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  position: relative;
+}
+.mainVideo img {
+  width: 540px;
+  height: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.mainVideoInfo {
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+}
+.mainVideoInfo h2,
+.mainVideoInfo span {
+  font-family: var(--main-font-family);
+}
+.mainVideoInfo > span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  width: 548px;
+}
+
+.mainVideoInfo h2 {
+  font-size: 26px;
+  line-height: 34px;
+  margin: 18px 0px 8px;
+}
+
+.mainVideoInfo div {
+  margin-top: 30px;
+  font-family: var(--main-font-family);
+  font-size: 16px;
+}
+/* Разместить карточку времени */
+.mainVideo .timeCard {
+}
+.channelsRec {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.channelsRec img{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.channelsRec > span{
+  font-size: 16px;
+  font-family: var(--main-font-family);
+}
+.channelsRec > div{
+  display: flex;
+  flex-direction: column;
+  gap: 27px
+}
+.channelsRecName{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.channelsRecName > span{
+font-family: var(--main-font-family);
+font-weight: 700;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0px;
+color: black;
+}
+.channelsRecName:last-child {
+margin-top: 5px;
+  color: red; 
+}
+
+.sliderHead{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+}
+.sliderHead h2{
+  margin: 0px 5px;
+}
+.sliderHead div{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.sliderHead div button{
+  border: 1px solid transparent;
+  background: rgb(154, 149, 149);
+  color: white;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: bold;
+}
+.sliderHead div button:hover{
+  background: rgb(12, 5, 5);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.sliderHead div button:active{
+ background: rgb(47, 46, 46);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.sliderBody{
+  display: flex;
+  gap: 40px;
+  padding: 20px 0px;
+}

@@ -9,7 +9,7 @@ const VideoDescription = () => {
       <div className="channelNameBlock">
         <h3>Food & Drink</h3>
         <span>Published on 14 Jun 2019</span>
-     
+        <span id="subscribed">245K subscribed</span>
         <p>
           A successful marketing plan relies heavily on the pulling-power of
           advertising copy. Writing result-oriented ad copy is difficult, as it
@@ -21,7 +21,9 @@ const VideoDescription = () => {
         <a>Show more</a>
       </div>
 
+      <button id="subscribeButton">Subscribe</button>
       <button>Subscribe 2.3m</button>
+      
     </div>
   );
 };

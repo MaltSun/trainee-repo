@@ -57,7 +57,7 @@
 .videoMeta div button:active {
   background: #8f8f8f;
   transition: background-color 0.2s ease;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .videoMeta div button img {
@@ -89,4 +89,85 @@ hr {
   border: none;
   background-color: #ccc;
   margin-top: 15px;
+}
+#views {
+  display: none;
+}
+
+/* Медиа стили */
+@media screen and (max-width: 1480px) {
+  .video img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 780px) {
+  .channelNameBlock p {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  #views {
+    display: block;
+    font-size: 12px;
+    font-family: Mulish;
+    color: gray;
+    margin: 10px 0px;
+  }
+  .videoGrade span {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .videoPlayer {
+    padding: 0px;
+  }
+  .video img {
+    border-radius: 0px;
+  }
+  .videoMeta div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dots-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 321px) {
+  .video img {
+    height: 180px;
+  }
+  .mainPart {
+    padding: 0px;
+  }
+  .videoPlayer h2 {
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 15px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    width: 220px;
+  }
+  #views {
+    padding-left: 15px;
+    margin-top: 0px;
+  }
+  .videoMeta {
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+  hr {
+    width: 90%;
+    margin-top: 30px;
+  }
+ #bottomLine{
+  display: block;
+  margin-top: 18px;
+ }
 }

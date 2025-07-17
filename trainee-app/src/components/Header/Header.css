@@ -1,12 +1,14 @@
-.header{
-    width: 100%;
-    padding: 20px 20px 27px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  width: 100%;
+  padding: 20px 20px 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
+#information, #search{
+  display: none;
+}
 #humbMenu {
   width: 20px;
   height: 17px;
@@ -36,26 +38,76 @@
   box-shadow: none;
   outline: none;
 }
-.header span{
-display: flex;
-flex-direction: row;
-align-items:center;
-gap: 55px;
-padding: 0 13px;
+.header span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 55px;
+  padding: 0 13px;
 }
-.header span img{
-   height: 20px; 
-  object-fit: contain; 
+.header span img {
+  height: 20px;
+  object-fit: contain;
 }
-#channelIcon{
+#channelIcon {
   width: 40px;
   height: 40px;
   object-fit: cover;
 }
-.header span div{
+.header span div {
   display: flex;
   flex-direction: row;
   gap: 50px;
   height: 20px;
 }
 
+@media screen and (max-width: 1460px) {
+  .logoBlock input {
+    width: 70%;
+    max-width: 300px;
+    transition: width 0.3s ease;
+  }
+  .logoBlock {
+    width: 70%;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 920px) {
+  .header span {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 780px) {
+  #humbMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+input, .header span{
+  display: none;
+}
+.header{
+  width: 100%;
+         justify-content: space-between;
+}
+#information, #search{
+  display: block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+}
+
+@media screen and (max-width: 321px) {
+ .header{
+  padding: 21px 15px;
+ }
+ #search{
+  margin-right: 25px ;
+ }
+}

@@ -11,7 +11,7 @@ const Header = () => {
           src="./Images/YouTubeLogo.png"
           alt="logo YouTube"
         />
-        <input placeholder="Search" type="text" />
+        <input placeholder="Search" type="text" />        
       </div>
 
       <span>
@@ -23,6 +23,8 @@ const Header = () => {
 
         <img id="channelIcon" src="./Images/Userpic.png" alt="channelIcon" />
       </span>
+      <img id="search" src="./Images/Search.png"/>
+      <button id="information"><img src="./Images/Information.png"/></button>
     </div>
   );
 };

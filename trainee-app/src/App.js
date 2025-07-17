@@ -11,6 +11,7 @@ function App() {
         <div>
           <VideoPlayer />
           <VideoDescription />
+          <hr id="bottomLine" />
         </div>
 
         <div className="asidePart">

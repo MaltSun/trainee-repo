@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+  box-sizing:border-box;
 }
+.mainPart{
+   display: flex;
+   flex-direction: row;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+   padding: 0px 0px 0px 48px;
+   width: 100%;
+   gap: 20px;
+
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainPart > div:first-child {
+  width: 1403px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Боковая часть со слайдером */
+.asidePart{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: column;
+
+}
+.asidePart{
+  font-family: Mulish;
+  display: flex;
+  flex-direction: column ;
+  
+}
+.asidePart > div{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  align-items: baseline
 }
 
-.App-link {
-  color: #61dafb;
+.asidePartHead > span{
+font-family: Mulish;
+font-size: 37px;
+font-weight: bold;
+display: flex;
+}
+.asidePartHead > div {
+display: flex;
+gap: 7px;
+}
+.asidePartHead > div span{
+font-family: Mulish;
+font-size: 16px;
+font-weight: 400;
+ text-transform: uppercase;
+letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
 }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #EBEBEB;
+  transition: 0.4s;
+  border-radius: 28px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+
+.switch input:checked + .slider::before {
+  transform: translateX(22px);
+  background: #2196F3
+}
+
+
+/* основная часть */
+.body img{
+  width: 1600px;
+  height: 25%;
+  border-radius: 25px;
+  object-fit: fill;
+}
+
+.body{
+  width: 76%;
+}
+
+
+
+

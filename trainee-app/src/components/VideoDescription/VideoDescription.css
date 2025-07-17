@@ -1,0 +1,74 @@
+.videoDescription img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+.channelNameBlock h3 {
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin: 5px 0px 3px;
+}
+
+.channelNameBlock {
+  flex: 1;
+}
+
+.videoDescription button {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+
+  height: 42px;
+  background: red;
+  border-radius: 25px;
+
+
+  height: fit-content;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+}
+.videoDescription {
+  padding: 27px 20px 27px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.videoDescription span {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #c2c2c2;
+}
+.channelNameBlock p {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  margin-top: 13px;
+  margin-bottom: 17px;
+  max-width: 820px;
+
+  color: #c2c2c2;
+}
+.channelNameBlock a {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #c2c2c2;
+}

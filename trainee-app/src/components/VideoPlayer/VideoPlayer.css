@@ -1,0 +1,92 @@
+.videoPlayer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+.video img {
+  width: 1363px;
+  height: 700px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.videoPlayer h2 {
+  font-family: Mulish;
+  font-size: 36px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+.videoGrade {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.videoGrade span {
+  font-size: 20px;
+  font-family: Mulish;
+  color: gray;
+}
+.videoMeta {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.videoMeta div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.videoMeta div button {
+  border-radius: 20px;
+  border-color: transparent;
+
+  font-family: Mulish;
+  font-size: 16px;
+
+  height: 40px;
+  width: 100px;
+  background: #ebebeb;
+}
+.videoMeta div button:hover {
+  background: #c7c7c7;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.videoMeta div button:active {
+  background: #8f8f8f;
+  transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.videoMeta div button img {
+  margin-right: 5px;
+}
+
+.dots-button {
+  background: none;
+  border: none;
+  padding: 8px 5px 8px 12px;
+
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dots-button span {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+  margin-top: 15px;
+}

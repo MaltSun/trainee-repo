@@ -55,6 +55,14 @@
   font-family: var(--main-font-family);
 }
 
+.channelActions button:hover{
+
+}
+
+.channelActions button:active{
+  
+}
+
 .mainBlock {
   width: 100%;
   display: flex;

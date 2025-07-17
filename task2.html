@@ -12,10 +12,19 @@
   </head>
   <body>
     <header>
-      <!-- бургер меню -->
       <img id="humbMenu" src="./Images/Menu.png" alt="burger" />
       <img id="YouTubeLogo" src="Images/YouTubeLogo.png" alt="logo YouTube" />
+      <div class="logoPart">
+        <img id="littleLogo" src="./Images/Logo.png" alt="" />
+        <span id="channelName">Margaret Phelps</span>
+      </div>
+
       <input placeholder="Search" type="text" />
+      <div class="searchPart">
+        <img id="search" src="./Images/Search.png" alt="" />
+        <img id="info" src="./Images/Information.png" alt="" />
+      </div>
+
       <span>
         <img src="./Images//Combined-Shape.png" alt="Video" /><img
           src="./Images/Combined Shape.png"
@@ -156,7 +165,7 @@
             </div>
           </div>
         </section>
-        <section >
+        <section class="sliderSection">
           <div class="sliderHead">
             <h2>Margaret Phelps videos</h2>
             <div>
@@ -164,7 +173,7 @@
               <button id="nextArr">&gt;</button>
             </div>
           </div>
-          <div id="container" >
+          <div id="container">
             <slider-scroll id="videoSlider" class="slider-scroll sliderBody">
               <div class="slide">
                 <img src="./Images/Cover.png" alt="" />
@@ -301,7 +310,7 @@
       </div>
     </main>
     <script type="module" src="./index.js"></script>
-     <script>
+    <script>
       const nextRecArr = document.getElementById("nextArr");
       const prevRecArr = document.getElementById("prevArr");
       const recVideoSlider = document.getElementById("videoSlider");
@@ -314,5 +323,4 @@
       });
     </script>
   </body>
-
 </html>

@@ -32,7 +32,6 @@
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   font-family: var(--main-font-family);
-
 }
 .channelHead span {
   font-family: var(--main-font-family);
@@ -53,14 +52,6 @@
 
   font-size: 16px;
   font-family: var(--main-font-family);
-}
-
-.channelActions button:hover{
-
-}
-
-.channelActions button:active{
-  
 }
 
 .mainBlock {
@@ -149,54 +140,54 @@
   flex-direction: column;
   gap: 31px;
 }
-.channelsRec img{
+.channelsRec img {
   width: 50px;
   height: 50px;
   border-radius: 25px;
 }
-.channelsRec > span{
+.channelsRec > span {
   font-size: 16px;
   font-family: var(--main-font-family);
 }
-.channelsRec > div{
+.channelsRec > div {
   display: flex;
   flex-direction: column;
-  gap: 27px
+  gap: 27px;
 }
-.channelsRecName{
+.channelsRecName {
   display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: center;
 }
-.channelsRecName > span{
-font-family: var(--main-font-family);
-font-weight: 700;
-font-size: 18px;
-line-height: 100%;
-letter-spacing: 0px;
-color: black;
+.channelsRecName > span {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: black;
 }
 .channelsRecName:last-child {
-margin-top: 5px;
-  color: red; 
+  margin-top: 5px;
+  color: red;
 }
 
-.sliderHead{
+.sliderHead {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 95%;
 }
-.sliderHead h2{
+.sliderHead h2 {
   margin: 0px 5px;
 }
-.sliderHead div{
+.sliderHead div {
   display: flex;
   flex-direction: row;
   gap: 8px;
 }
-.sliderHead div button{
+.sliderHead div button {
   border: 1px solid transparent;
   background: rgb(154, 149, 149);
   color: white;
@@ -208,18 +199,160 @@ margin-top: 5px;
   font-size: 18px;
   font-weight: bold;
 }
-.sliderHead div button:hover{
+.sliderHead div button:hover {
   background: rgb(12, 5, 5);
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
-.sliderHead div button:active{
- background: rgb(47, 46, 46);
+.sliderHead div button:active {
+  background: rgb(47, 46, 46);
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
-.sliderBody{
+.sliderBody {
   display: flex;
   gap: 40px;
   padding: 20px 0px;
+}
+
+#littleLogo,
+#channelName,
+#search,
+#info,
+.searchPart,
+.logoPart {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  #humbMenu,
+  #YouTubeLogo,
+  header span,
+  img:last-child,
+  header input,
+  .channelsRec,
+  .channelActions img,
+  .mainVideo, .sliderHead {
+    display: none;
+  }
+  #littleLogo,
+  #channelName,
+  #info,
+  #search,
+  .searchPart,
+  .logoPart {
+    display: block;
+  }
+  .logoPart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: black;
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+  .searchPart {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+  }
+  #search {
+    width: 19px;
+    height: 19px;
+  }
+  header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 26px;
+    padding-bottom: 10px;
+  }
+  aside, .sliderHead {
+    display: none;
+  }
+  header span {
+    margin-left: 5px;
+  }
+  .channelBase {
+    padding: 0px;
+  }
+  .channelBase > img {
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+  .channelHeadBlock,
+  .channelHead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .channelHead img {
+    width: 70px;
+    height: 70px;
+  }
+  .channelHeadBlock {
+    padding-left: 20px;
+  }
+  .channelHead div {
+    margin-top: 8px;
+  }
+  .channelActions button {
+    width: 120px;
+    height: 34px;
+    margin-left: 0px;
+    margin-top: 20px;
+   font-size: 12px;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   padding: 0px;
+  }
+  .channelHead strong {
+    font-size: 20px;
+  }
+  .channelHead div span {
+    font-size: 12px;
+  }
+  .sliderSection, .sliderBody{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .sliderBody{
+    gap:5px
+  }
+  .channelTools a, .dateAndViews{
+    font-size: 14px;
+  }
+  .dateAndViews h3{
+    margin-bottom: 3px;
+  }
+  .channelTools{
+
+    width: 100%;
+    ;overflow: hidden;
+    padding-left: 20px;
+    gap: 40px
+  }
+  .channelHeadBlock{
+    padding-bottom: 35px;
+  }
+  .sliderBody{
+    padding: 15px 10px;
+  }
+  .channelHeadBlock{
+  position: relative;
+}
+.channelHead img{
+  position: absolute;
+  top: -40px
+}
+
 }

@@ -446,6 +446,9 @@ main {
 #search {
   display: none;
 }
+.bottomNav{
+  display: none;
+}
 @media screen and (max-width: 400px) {
   aside,
   .recommendationSection,
@@ -455,6 +458,9 @@ main {
   header > span,
   .channelName {
     display: none;
+  }
+  .bottomNav{
+    display: block;
   }
   #search {
     display: block;
@@ -489,5 +495,40 @@ main {
   }
   .videoSlider {
     gap: 8px;
+  }
+  .bottomNav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+  }
+
+  .navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #888;
+    cursor: pointer;
+  }
+
+  .navItem img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+  }
+
+  .navItem.active {
+    color: red;
+  }
+
+  .navItem.active img {
+    filter: none;
   }
 }

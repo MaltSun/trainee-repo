@@ -16,9 +16,9 @@ const Header = () => {
 
       <span>
         <div>
-          <img src="./Images/Combined-Shape.png" alt="Video" />
-          <img src="./Images/Combined Shape.png" alt="Menu" />
-          <img src="./Images/ui-11.png" alt="notification" />
+          <img src="./Images/combined-Shape.png" alt="Video" />
+          <img src="./Images/combinedShape.png" alt="Menu" />
+          <img src="./Images/bell.png" alt="notification" />
         </div>
 
         <img id="channelIcon" src="./Images/Userpic.png" alt="channelIcon" />

@@ -23,7 +23,7 @@ const VideoPlayer = () => {
               <img src="./Images/Subtitles.png" alt="Video" />
               <img src="./Images/Settings.png" alt="Video" />
               <img src="./Images/Size.png" alt="Video" />
-              <img src="./Images/Full Screen.png" alt="Video" />
+              <img src="./Images/fullScreen.png" alt="Video" />
             </div>
           </div>
         </div>

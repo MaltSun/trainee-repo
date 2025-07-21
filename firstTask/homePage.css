@@ -51,15 +51,12 @@ header input {
   border: 1px solid white;
   box-shadow: none;
   outline: none;
+
+  transition: border-color 0.2s ease;
 }
 
 header input:active {
   border: 1px solid rgb(8, 7, 7);
-  transition: border-color 0.2s ease;
-}
-header input:hover {
-  border: 1px solid rgb(116, 115, 115);
-  transition: border-color 0.2s ease;
 }
 
 header span {
@@ -72,12 +69,6 @@ header span img {
 }
 #channelIcon {
   margin-left: 55px;
-}
-#humbMenu:hover,
-#channelIcon:hover,
-#YouTubeLogo:hover {
-  cursor: pointer;
-  transition: text-decoration 0.3s ease;
 }
 
 h2,
@@ -98,7 +89,7 @@ a {
   line-height: var(--main-line-height);
   letter-spacing: var(--main-letter-spacing);
 }
-/* интрестинг решение */
+
 span {
   color: #c2c2c2;
 }
@@ -143,10 +134,7 @@ aside div li img,
 #setting {
   margin-top: 98px;
 }
-aside li:hover {
-  text-decoration: underline;
-  text-decoration-color: #8c8b8b;
-}
+
 aside li a:active,
 .active a {
   text-decoration: underline;
@@ -156,9 +144,7 @@ aside li a:active,
 .active a {
   text-decoration: none;
 }
-.active:hover {
-  text-decoration-color: red;
-}
+
 main {
   display: flex;
   flex-direction: row;
@@ -184,15 +170,8 @@ main {
   align-items: center;
   justify-content: center;
 }
-.channelName div img:hover,
-.channelName div span:hover {
-  cursor: pointer;
-}
-.channelName button,
-#recommendationPrevArr,
-#recommendationNextArr,
-#prevRecArr,
-#nextRecArr {
+
+.arrow {
   border: 1px solid white;
   background: rgb(154, 149, 149);
   color: white;
@@ -203,6 +182,7 @@ main {
   font-family: var(--main-font-family);
   font-size: 18px;
   font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 .container,
 .recommendationContainer {
@@ -250,37 +230,17 @@ main {
   margin-top: 10px;
   margin-bottom: 7px;
   cursor: pointer;
-}
-.slide h3:hover,
-.recommendationSlide h3:hover {
-  color: red;
-  text-decoration: underline;
   transition: color 0.2s easy;
 }
+
 .slide h3:active,
 .recommendationSlide h3:active {
   color: red;
   text-decoration: underline;
-  transition: color 0.2s easy;
 }
-#prevArr:hover,
-#nextArr:hover,
-#recommendationNextArr:hover,
-#recommendationPrevArr:hover,
-#prevRecArr:hover,
-#nextRecArr:hover {
-  background: rgb(12, 5, 5);
-  transition: background-color 0.2s ease;
-  cursor: pointer;
-}
-#prevArr:active,
-#nextArr:active,
-#recommendationNextArr:active,
-#recommendationPrevArr:active,
-#prevRecArr:active,
-#nextRecArr:active {
-  background: rgb(47, 46, 46);
-  transition: background-color 0.2s ease;
+
+.arrow:active {
+  background: rgb(78, 76, 76);
   cursor: pointer;
 }
 .slide,
@@ -446,7 +406,7 @@ main {
 #search {
   display: none;
 }
-.bottomNav{
+.bottomNav {
   display: none;
 }
 @media screen and (max-width: 400px) {
@@ -459,7 +419,7 @@ main {
   .channelName {
     display: none;
   }
-  .bottomNav{
+  .bottomNav {
     display: block;
   }
   #search {
@@ -530,5 +490,34 @@ main {
 
   .navItem.active img {
     filter: none;
+  }
+}
+@media (hover: hover) {
+  .slide h3:hover,
+  .recommendationSlide h3:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  .channelName div img:hover,
+  .channelName div span:hover {
+    cursor: pointer;
+  }
+  aside li:hover {
+    text-decoration: underline;
+    text-decoration-color: #8c8b8b;
+  }
+  .icon:hover {
+    cursor: pointer;
+    transition: text-decoration 0.3s ease;
+  }
+  header input:hover {
+    border: 1px solid rgb(116, 115, 115);
+  }
+  .active:hover {
+    text-decoration-color: red;
+  }
+  .arrow:hover {
+    background: rgb(12, 5, 5);
+    cursor: pointer;
   }
 }

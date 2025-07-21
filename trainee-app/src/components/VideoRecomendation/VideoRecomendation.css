@@ -46,11 +46,14 @@
   font-size: 18px;
   font-weight: bold;
 }
-.sliderHead div button:hover {
-  background: rgb(12, 5, 5);
-  transition: background-color 0.2s ease;
-  cursor: pointer;
+@media (hover: hover) {
+  .sliderHead div button:hover {
+    background: rgb(12, 5, 5);
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
 }
+
 .sliderHead div button:active {
   background: rgb(47, 46, 46);
   transition: background-color 0.2s ease;
@@ -139,7 +142,7 @@
   width: 22px;
   height: 24px;
   border-radius: 0px;
-  gap: 5px
+  gap: 5px;
 }
 .progress-fill {
   height: 8px;
@@ -160,10 +163,10 @@
   gap: 43px;
   margin-top: 0px;
 }
-.videoActions div:last-child{
+.videoActions div:last-child {
   padding-right: 12px;
   display: flex;
-  gap: 35px
+  gap: 35px;
 }
 @media screen and (max-width: 1837px) {
   .sliderBody {

@@ -44,19 +44,21 @@
   font-family: Mulish;
   font-size: 16px;
 
+  transition: background-color 0.2s ease;
+
   height: 40px;
   width: 100px;
   background: #ebebeb;
 }
-.videoMeta div button:hover {
-  background: #c7c7c7;
-  transition: background-color 0.2s ease;
-  cursor: pointer;
+@media (hover: hover) {
+  .videoMeta div button:hover {
+    background: #c7c7c7;
+    cursor: pointer;
+  }
 }
 
 .videoMeta div button:active {
   background: #8f8f8f;
-  transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
@@ -166,8 +168,8 @@ hr {
     width: 90%;
     margin-top: 30px;
   }
- #bottomLine{
-  display: block;
-  margin-top: 18px;
- }
+  #bottomLine {
+    display: block;
+    margin-top: 18px;
+  }
 }

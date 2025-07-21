@@ -3,30 +3,9 @@ import React from "react";
 import "./VideoRecomendation.css";
 
 const VideoRecomendation = () => {
-  // const sliderRef = useRef();
-
-  // useEffect(() => {
-  //   const slider = sliderRef.current;
-  //   const slideHeight = slider?.firstChild?.offsetHeight || 0;
-
-  //   const interval = setInterval(() => {
-  //     if (slider) {
-  //       const nextScrollTop = slider.scrollTop + slideHeight;
-
-  //       if (nextScrollTop + slider.clientHeight >= slider.scrollHeight) {
-  //         slider.scrollTop = 0;
-  //       } else {
-  //         slider.scrollTop = nextScrollTop;
-  //       }
-  //     }
-  //   }, 3000);
-  //   return () => clearInterval(interval);
-  // }, []);
-
-  return (
+   return (
     <div id="container">
       <slider-scroll
-        // ref={sliderRef}
         id="videoSlider"
         class="slider-scroll sliderBody"
       >

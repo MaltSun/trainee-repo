@@ -11,6 +11,9 @@
   --main-line-height: 100%;
   --main-letter-spacing: 0px;
   --main-color: #19202c;
+  --hover-color: rgb(116, 115, 115);
+  --active--color: rgb(15, 14, 14);
+  --accent-color:red;
 }
 body {
   display: flex;
@@ -19,6 +22,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1900px;
+  font-family: var(--main-font-family);
 }
 header {
   width: 100%;
@@ -45,7 +49,7 @@ header input {
   border-color: white;
   border-radius: 30px;
   padding-left: 20px;
-  font-family: var(--main-font-family);
+  
   font-weight: var(--normal-font-weight);
   font-size: var(--normal-font-size);
   border: 1px solid white;
@@ -56,7 +60,7 @@ header input {
 }
 
 header input:active {
-  border: 1px solid rgb(8, 7, 7);
+  border: 1px solid var(--active--color);
 }
 
 header span {
@@ -73,7 +77,7 @@ header span img {
 
 h2,
 .channelName span {
-  font-family: var(--main-font-family);
+  
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
@@ -83,7 +87,7 @@ h2,
 
 h3,
 a {
-  font-family: var(--main-font-family);
+  
   font-weight: var(--main-font-weight);
   font-size: var(--normal-font-size);
   line-height: var(--main-line-height);
@@ -102,7 +106,7 @@ main aside {
 aside div {
   text-decoration: none;
   list-style: none;
-  font-family: var(--main-font-family);
+  
   font-weight: var(--normal-font-weight);
   font-size: var(--normal-font-size);
   letter-spacing: var(--main-letter-spacing);
@@ -138,8 +142,8 @@ aside div li img,
 aside li a:active,
 .active a {
   text-decoration: underline;
-  text-decoration-color: red;
-  color: red;
+  text-decoration-color: var(--accent-color);
+  color: var(--accent-color);
 }
 .active a {
   text-decoration: none;
@@ -179,7 +183,7 @@ main {
   width: 30px;
   height: 30px;
   text-align: center;
-  font-family: var(--main-font-family);
+  
   font-size: 18px;
   font-weight: bold;
   transition: background-color 0.2s ease;
@@ -223,7 +227,6 @@ main {
 }
 .slide span {
   font-size: 13px;
-  font-family: var(--main-font-family);
 }
 .slide h3,
 .recommendationSlide h3 {
@@ -235,12 +238,12 @@ main {
 
 .slide h3:active,
 .recommendationSlide h3:active {
-  color: red;
+  color: var(--accent-color);
   text-decoration: underline;
 }
 
 .arrow:active {
-  background: rgb(78, 76, 76);
+  background: var(--active--color);
   cursor: pointer;
 }
 .slide,
@@ -259,7 +262,6 @@ main {
 
   color: white;
   line-height: 100%;
-  font-family: var(--main-font-family);
   text-align: center;
 }
 .slide .timeCard {
@@ -331,7 +333,7 @@ main {
 .recommendationSection {
   margin-top: 20px;
   padding-left: 5px;
-  font-family: var(--main-font-family);
+  
 }
 .recommendationSection .container {
   padding-left: 18px;
@@ -341,7 +343,7 @@ main {
   font-size: 13px;
 }
 .recommendation h3 {
-  font-family: var(--main-font-family);
+  
   font-size: var(--main-font-size);
   margin-top: 5px;
   margin-bottom: 10px;
@@ -369,7 +371,7 @@ main {
   border-radius: 18px;
   border: solid 1px transparent;
 
-  font-family: var(--main-font-family);
+  
   font-size: 16px;
   color: white;
   padding: 10px 15px;
@@ -383,7 +385,7 @@ main {
 }
 .Name {
   font-size: var(--main-font-size);
-  font-family: var(--main-font-family);
+  
   font-weight: var(--main-font-weight);
   color: var(--main-color);
 }
@@ -400,9 +402,7 @@ main {
   border-radius: 40px;
 }
 
-.recChannelName span {
-  font-family: var(--main-font-family);
-}
+
 #search {
   display: none;
 }
@@ -485,7 +485,7 @@ main {
   }
 
   .navItem.active {
-    color: red;
+    color: var(--accent-color);
   }
 
   .navItem.active img {
@@ -495,7 +495,7 @@ main {
 @media (hover: hover) {
   .slide h3:hover,
   .recommendationSlide h3:hover {
-    color: red;
+    color: var(--accent-color);
     text-decoration: underline;
   }
   .channelName div img:hover,
@@ -504,20 +504,20 @@ main {
   }
   aside li:hover {
     text-decoration: underline;
-    text-decoration-color: #8c8b8b;
+    text-decoration-color: #000000;
   }
   .icon:hover {
     cursor: pointer;
     transition: text-decoration 0.3s ease;
   }
   header input:hover {
-    border: 1px solid rgb(116, 115, 115);
+    border: 1px solid var(--hover-color);
   }
   .active:hover {
     text-decoration-color: red;
   }
   .arrow:hover {
-    background: rgb(12, 5, 5);
+    background: var(--hover-color);
     cursor: pointer;
   }
 }

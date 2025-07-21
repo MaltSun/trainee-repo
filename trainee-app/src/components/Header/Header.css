@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-family: Mulish;;
 }
 #information, #search{
   display: none;
@@ -30,7 +31,6 @@
   border-radius: 30px;
   padding-left: 22px;
 
-  font-family: var(--main-font-family);
   font-weight: var(--normal-font-weight);
   font-size: var(--normal-font-size);
 

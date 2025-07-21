@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
+  font-family: Mulish;
 }
 .video img {
   width: 1363px;
@@ -11,7 +12,7 @@
 }
 
 .videoPlayer h2 {
-  font-family: Mulish;
+  
   font-size: 36px;
   margin-top: 15px;
   margin-bottom: 7px;
@@ -24,7 +25,6 @@
 }
 .videoGrade span {
   font-size: 20px;
-  font-family: Mulish;
   color: gray;
 }
 .videoMeta {
@@ -41,7 +41,6 @@
   border-radius: 20px;
   border-color: transparent;
 
-  font-family: Mulish;
   font-size: 16px;
 
   transition: background-color 0.2s ease;
@@ -52,13 +51,13 @@
 }
 @media (hover: hover) {
   .videoMeta div button:hover {
-    background: #c7c7c7;
+    background: var(--hover-color);
     cursor: pointer;
   }
 }
 
 .videoMeta div button:active {
-  background: #8f8f8f;
+  background: var(--active--color);
   cursor: pointer;
 }
 
@@ -114,7 +113,6 @@ hr {
   #views {
     display: block;
     font-size: 12px;
-    font-family: Mulish;
     color: gray;
     margin: 10px 0px;
   }
@@ -146,7 +144,6 @@ hr {
     padding: 0px;
   }
   .videoPlayer h2 {
-    font-family: Mulish;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;

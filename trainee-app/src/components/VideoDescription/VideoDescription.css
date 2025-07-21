@@ -3,9 +3,10 @@
   height: 80px;
   border-radius: 40px;
   object-fit: cover;
+  font-family: Mulish;
 }
 .channelNameBlock h3 {
-  font-family: Mulish;
+  
   font-weight: 700;
   font-size: 26px;
   line-height: 100%;
@@ -18,7 +19,6 @@
 }
 
 .videoDescription button {
-  font-family: Mulish;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -43,7 +43,6 @@
 }
 
 .videoDescription span {
-  font-family: Mulish;
   font-weight: 400;
   font-size: 13px;
   line-height: 100%;
@@ -51,7 +50,6 @@
   color: #c2c2c2;
 }
 .channelNameBlock p {
-  font-family: Mulish;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -63,7 +61,6 @@
   color: #c2c2c2;
 }
 .channelNameBlock a {
-  font-family: Mulish;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -84,7 +81,6 @@
 
 @media screen and (max-width: 321px) {
   .channelNameBlock h3 {
-    font-family: Mulish;
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
@@ -99,7 +95,6 @@
   }
   #subscribeButton {
     display: block;
-    font-family: Mulish;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;

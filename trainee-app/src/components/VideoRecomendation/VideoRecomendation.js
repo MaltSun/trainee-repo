@@ -10,7 +10,7 @@ const VideoRecomendation = () => {
         class="slider-scroll sliderBody"
       >
         <div class="slide">
-          <img src="./Images/Cover (1).png" alt="" />
+          <img src="./Images/video1.png" alt="video" />
           <span class="timeCard">8:00</span>
           <div>
             <h3>Baby Monitor Technology</h3>
@@ -22,7 +22,7 @@ const VideoRecomendation = () => {
           </div>
         </div>
         <div class="slide">
-          <img src="./Images/Cover (5).png" alt="" />
+          <img src="./Images/video5.png" alt="video" />
           <span class="timeCard">8:00</span>
           <div>
             <h3>A Good Autoresponder</h3>
@@ -34,7 +34,7 @@ const VideoRecomendation = () => {
           </div>
         </div>
         <div class="slide">
-          <img src="./Images/Cover (1).png" alt="" />
+          <img src="./Images/video1.png" alt="video" />
           <span class="timeCard">8:00</span>
           <div>
             <h3>Selecting The Right Hotel</h3>
@@ -46,7 +46,7 @@ const VideoRecomendation = () => {
           </div>
         </div>
         <div class="slide">
-          <img src="./Images/Cover (2).png" alt="" />
+          <img src="./Images/video2.png" alt="video" />
           <span class="timeCard">6:40</span>
           <div>
             <h3>Telescopes 101</h3>
@@ -58,7 +58,7 @@ const VideoRecomendation = () => {
           </div>
         </div>
         <div class="slide">
-          <img src="./Images/Cover (3).png" alt="" />
+          <img src="./Images/video3.png" alt="video" />
           <span class="timeCard">1:45</span>
           <div>
             <h3>Medical Care Is Just</h3>
@@ -70,7 +70,7 @@ const VideoRecomendation = () => {
           </div>
         </div>
         <div class="slide">
-          <img src="./Images/Cover (1).png" alt="" />
+          <img src="./Images/video.png" alt="video" />
           <span class="timeCard">1:45</span>
           <div>
             <h3>Moon Gazing</h3>
@@ -85,7 +85,7 @@ const VideoRecomendation = () => {
           </div>
         </div>
         <div class="slide">
-          <img src="./Images/Cover (1).png" alt="" />
+          <img src="./Images/video1.png" alt="video" />
           <span class="timeCard">9:13</span>
           <h3>A Brief History Of Creation</h3>
           <div class="meta">
@@ -95,7 +95,7 @@ const VideoRecomendation = () => {
           </div>
         </div>
         <div class="slide">
-          <img src="./Images/Cover (5).png" alt="" />
+          <img src="./Images/video5.png" alt="video" />
           <span class="timeCard">9:13</span>
           <div>
             <h3>Selecting The Right Hotel</h3>
@@ -107,7 +107,7 @@ const VideoRecomendation = () => {
           </div>
         </div>
         <div class="slide">
-          <img src="./Images/Cover (1).png" alt="" />
+          <img src="./Images/video1.png" alt="video" />
           <span class="timeCard">9:13</span>
           <div>
             <h3>Asteroids</h3>

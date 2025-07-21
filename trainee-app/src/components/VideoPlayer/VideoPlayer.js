@@ -29,13 +29,13 @@ const VideoPlayer = () => {
         </div>
         <div class="player">
           <button class="control-btn">
-            <img src="./Images/Pause.png" />
+            <img src="./Images/Pause.png" alt="pause"/>
           </button>
           <span class="current-time">1:34</span>
           <div class="progress-fill"></div>
           <span class="duration">-10:00</span>
           <button class="volume-btn">
-            <img src="./Images/Volume.png" />
+            <img src="./Images/Volume.png" alt="volume"/>
           </button>
         </div>
       </div>

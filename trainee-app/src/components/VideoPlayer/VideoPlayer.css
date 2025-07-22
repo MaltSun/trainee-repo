@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
-  font-family: Mulish;
 }
 .video img {
   width: 1363px;
@@ -25,7 +24,8 @@
 }
 .videoGrade span {
   font-size: 20px;
-  color: gray;
+  color: var(--normal-font-colot
+  );
 }
 .videoMeta {
   display: flex;
@@ -47,7 +47,8 @@
 
   height: 40px;
   width: 100px;
-  background: #ebebeb;
+  
+  background-color: var(--background-color)
 }
 @media (hover: hover) {
   .videoMeta div button:hover {

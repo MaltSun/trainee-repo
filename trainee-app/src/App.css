@@ -1,6 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
+:root{
+ --main-font-family: Mulish;
+ --normal-font-colot: #c2c2c2;
+ --accent-color: red;
+ --background-color: #ebebeb;
+}
 .mainPart {
   display: flex;
   flex-direction: row;
@@ -8,6 +15,7 @@
   padding: 0px 0px 0px 48px;
   width: 100%;
   gap: 20px;
+  font-family: var(--main-font-family);
 }
 
 /* Боковая часть со слайдером */
@@ -16,7 +24,6 @@
   flex: column;
 }
 .asidePart {
-  font-family: Mulish;
   display: flex;
   flex-direction: column;
 }
@@ -28,7 +35,6 @@
 }
 
 .asidePartHead > span {
-  font-family: Mulish;
   font-size: 37px;
   font-weight: bold;
   display: flex;
@@ -38,7 +44,6 @@
   gap: 7px;
 }
 .asidePartHead > div span {
-  font-family: Mulish;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -65,7 +70,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ebebeb;
+  background-color: var(--background-color);
   transition: 0.4s;
   border-radius: 28px;
 }
@@ -118,14 +123,12 @@
 
 @media screen and (max-width: 321px) {
   .asidePartHead > span {
-    font-family: Mulish;
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0px;
   }
   .asidePartHead div > span {
-    font-family: Mulish;
     font-weight: 700;
     font-size: 10px;
     line-height: 100%;
@@ -150,14 +153,12 @@
     cursor: pointer;
     top: -5px;
     bottom: 5px;
-    background-color: #ebebeb;
+    background-color: var(--background-color);
     transition: 0.4s;
     border-radius: 28px;
   }
   .mainPart {
     gap: 0px;
-  }
-  .switch {
   }
   .asidePartHead {
     margin-top: 15px;

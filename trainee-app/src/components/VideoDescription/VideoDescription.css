@@ -3,7 +3,6 @@
   height: 80px;
   border-radius: 40px;
   object-fit: cover;
-  font-family: Mulish;
 }
 .channelNameBlock h3 {
   
@@ -26,7 +25,7 @@
   text-align: center;
 
   height: 42px;
-  background: red;
+  background: var(--accent-color);
   border-radius: 25px;
 
   height: fit-content;
@@ -47,7 +46,7 @@
   font-size: 13px;
   line-height: 100%;
   letter-spacing: 0px;
-  color: #c2c2c2;
+  color: var(--normal-font-colot)
 }
 .channelNameBlock p {
   font-weight: 400;
@@ -58,14 +57,14 @@
   margin-bottom: 17px;
   max-width: 820px;
 
-  color: #c2c2c2;
+ color: var(--normal-font-colot)
 }
 .channelNameBlock a {
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0px;
-  color: #c2c2c2;
+  color: var(--normal-font-colot)
 }
 #subscribed,  #subscribeButton  {
   display: none;
@@ -101,7 +100,7 @@
     letter-spacing: 0px;
     text-align: center;
     background: transparent;
-    color: red;
+    color: var(--accent-color);
     padding-top: 15px;
   }
   a{

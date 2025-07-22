@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: Mulish;;
+  font-family: var(--main-font-family)
 }
 #information, #search{
   display: none;
@@ -25,8 +25,7 @@
   width: 830px;
   height: 45px;
 
-  background-color: #eeededbd;
-  border-color: white;
+  background-color:var(--background-color);
 
   border-radius: 30px;
   padding-left: 22px;

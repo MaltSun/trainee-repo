@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+:root{
+ --main-font-family: Mulish;
+ --normal-font-colot: #c2c2c2;
+ --accent-color: red;
+ --background-color: #ebebeb;
+}
+.mainPart {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0px 0px 0px 48px;
+  width: 100%;
+  gap: 20px;
+  font-family: var(--main-font-family);
+}
+
+/* Боковая часть со слайдером */
+.asidePart {
+  display: flex;
+  flex: column;
+}
+.asidePart {
+  display: flex;
+  flex-direction: column;
+}
+.asidePart > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.asidePartHead > span {
+  font-size: 37px;
+  font-weight: bold;
+  display: flex;
+}
+.asidePartHead > div {
+  display: flex;
+  gap: 7px;
+}
+.asidePartHead > div span {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-color);
+  transition: 0.4s;
+  border-radius: 28px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(22px);
+  background: #2196f3;
+}
+
+/* основная часть */
+.body img {
+  width: 1600px;
+  height: 25%;
+  border-radius: 25px;
+  object-fit: fill;
+}
+
+.body {
+  width: 76%;
+}
+
+#bottomLine {
+  display: none;
+}
+
+@media screen and (max-width: 1837px) {
+  .mainPart {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mainPart {
+    padding: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .asidePartHead > span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+  .asidePartHead div > span {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.63px;
+    text-transform: uppercase;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 19px;
+  }
+  .slider::before {
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 2px;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: -5px;
+    bottom: 5px;
+    background-color: var(--background-color);
+    transition: 0.4s;
+    border-radius: 28px;
+  }
+  .mainPart {
+    gap: 0px;
+  }
+  .asidePartHead {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 17px;
+  }
+}

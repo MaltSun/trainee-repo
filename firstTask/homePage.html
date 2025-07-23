@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./homePage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Page 1</title>
+  </head>
+  <body>
+    <header>
+      <img id="humbMenu" src="../Images/menu.png" alt="Burger" class="icon"/>
+      <img
+        id="YouTubeLogo"
+        src="../Images/youTubeLogo.png"
+        alt="YouTube logo"
+        class="icon"
+      />
+
+      <input placeholder="Search" type="text" />
+
+      <img id="search" src="../Images/search.png" alt="Search" class="icon"/>
+
+      <span>
+        <img src="../Images/combined-Shape.png" alt="Video" /><img
+          src="../Images/combinedShape.png"
+          alt="Menu"
+          class="icon"
+        />
+        <img src="../Images/bell.png" alt="Notification" class="icon"/>
+      </span>
+      <img id="channelIcon" src="../Images/userpic.png" alt="Channel Icon" class="icon" />
+    </header>
+
+    <main>
+      <aside>
+        <div>
+          <li class="active">
+            <img src="../Images/home.png" alt="Home" /><a href="">Home</a>
+          </li>
+          <li>
+            <img src="../Images/trending.png" alt="Trending" /><a>Trending</a>
+          </li>
+          <li>
+            <img src="../Images/subscription.png" alt="Subscription" /><a>Subscription</a>
+          </li>
+        </div>
+
+        <div id="history">
+          <li>
+            <img src="../Images/library.png" alt="Library" /><a>Library</a>
+          </li>
+          <li>
+            <img src="../Images/history.png" alt="History" /><a>History</a>
+          </li>
+          <li>
+            <img src="../Images/whatchLater.png" alt="Watch later" /><a
+              >Watch later</a
+            >
+          </li>
+          <li>
+            <img src="../Images/favourites.png" alt="Favourites" /><a
+              >Favourites</a
+            >
+          </li>
+          <li>
+            <img src="../Images/likedVideos.png" alt="Liked videos" /><a
+              >Liked videos</a
+            >
+          </li>
+          <li><img src="../Images/music.png" alt="Music" /><a>Music</a></li>
+          <li><img src="../Images/games.png" alt="Games" /><a>Games</a></li>
+          <li>
+            <img src="../Images/chevron-down.png" alt="Show more" /><a
+              >Show more</a
+            >
+          </li>
+        </div>
+
+        <div id="subscriptions">
+          <h3>Subscriptions</h3>
+          <li>
+            <img src="../Images/oval.png" alt="channelIcon" /><span
+              >Gussie Singleton</span
+            >
+          </li>
+          <li>
+            <img src="../Images/oval.png" alt="channelIcon" /><span
+              >Nora Francis</span
+            >
+          </li>
+          <li>
+            <img src="../Images/oval.png" alt="channelIcon" /><span
+              >Belle Briggs</span
+            >
+          </li>
+          <li>
+            <img src="../Images/oval.png" alt="channelIcon" /><span
+              >Eunice Cortez</span
+            >
+          </li>
+          <li>
+            <img src="../Images/oval.png" alt="channelIcon" /><span
+              >Emma Hanson</span
+            >
+          </li>
+          <li>
+            <img src="../Images/oval.png" alt="channelIcon" /><span
+              >Leah Berry</span
+            >
+          </li>
+        </div>
+
+        <div id="setting">
+          <img src="../Images/settings.png" alt="settings" />
+          <span>Setting</span>
+        </div>
+      </aside>
+      <div class="main">
+        <section>
+          <div class="channelName">
+            <div>
+              <img src="../Images/oval.png" alt="channelIcon" />
+              <span>Dollie Blair</span>
+            </div>
+
+            <span>
+              <button id="prevArr" class="arrow">&lt;</button>
+              <button id="nextArr" class="arrow">&gt;</button>
+            </span>
+          </div>
+          <div id="container" class="container">
+            <slider-scroll id="videoSlider" class="slider-scroll videoSlider">
+              <div class="slide">
+                <img src="../Images/video1.png" alt="first video" />
+                <span class="timeCard">4:15</span>
+                <div>
+                  <h3>A Brief History Of Creation</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>80k views</span>
+                      <span>&middot;</span>
+                      <span>3 days ago</span>
+                    </div>
+
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../Images/video2.png" alt="second video" />
+                <span class="timeCard">8:00</span>
+                <div>
+                  <h3>Selecting The Right Hotel</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>123k views</span>
+                      <span>&middot;</span>
+                      <span>1 month ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../Images/video1.png" alt=" third video" />
+                <span class="timeCard">5:32</span>
+                <div>
+                  <h3>Asteroids</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>43k views</span>
+                      <span>&middot;</span>
+                      <span>12 days ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../Images/video2.png" alt="forth video" />
+                <span class="timeCard">6:40</span>
+                <div>
+                  <h3>Telescopes 101</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>1k views</span>
+                      <span>&middot;</span>
+                      <span>6 months ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../Images/video3.png" alt="fifth video" />
+                <span class="timeCard">1:45</span>
+                <div>
+                  <h3>Medical Care Is Just</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>18k views</span>
+                      <span>&middot;</span>
+                      <span>2 days ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../Images/video1.png" alt="sixth video" />
+                <span class="timeCard">1:45</span>
+                <div>
+                  <h3>Moon Gazing</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>67k views</span>
+                      <span>&middot;</span>
+                      <span>4 months ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../Images/video3.png" alt="seventh video" />
+                <span class="timeCard">9:13</span>
+                <h3>A Brief History Of Creation</h3>
+                <span>80k views</span>
+                <span>&middot;</span>
+                <span>3 days ago</span><span>Dollier Blair</span>
+              </div>
+              <div class="slide">
+                <img src="../Images/video5.png" alt="eighth video" />
+                <span class="timeCard">9:13</span>
+                <div>
+                  <h3>Selecting The Right Hotel</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>123k views</span>
+                      <span>&middot;</span>
+                      <span>1 month ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../Images/video1.png" alt="ninth video" />
+                <span class="timeCard">9:13</span>
+                <div>
+                  <h3>Asteroids</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>43k views</span>
+                      <span>&middot;</span>
+                      <span>12 days ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+            </slider-scroll>
+          </div>
+        </section>
+        <section class="recommendationSection">
+          <div class="recommendation">
+            <h2>Recommended</h2>
+            <div>
+              <button id="recommendationPrevArr" class="arrow">&lt;</button>
+              <button id="recommendationNextArr" class="arrow">&gt;</button>
+            </div>
+          </div>
+          <div id="recommendationContainer" class="container">
+            <slider-scroll
+              id="recommendationVideoSlider"
+              class="slider-scroll recommendationSlider"
+            >
+              <div class="recommendationSlide">
+                <img src="../Images/largeVideo1.png" alt="timeCard" />
+                <span class="timeCard">3:40</span>
+                <div>
+                  <h3>Dude You Re Getting A Telescope</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>34k views</span>
+                      <span>1 month ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="recommendationSlide">
+                <img src="../Images/largeVideo2.png" alt="timeCard" />
+                <span class="timeCard">2:12</span>
+                <div>
+                  <h3>Moon Gazing</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>54k views</span><span>12 days ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="recommendationSlide">
+                <img src="../Images/largeVideo3.png" alt="timeCard" />
+                <span class="timeCard">6:40</span>
+                <div>
+                  <h3>Moon Gazing</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>125k views</span>
+                      <span>6 months ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="recommendationSlide">
+                <img src="../Images/largeVideo1.png" alt="timeCard" />
+                <span class="timeCard">1:45</span>
+                <div>
+                  <h3>Dude You Re Getting A Telescope</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>34k views</span>
+                      <span>2 days ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="recommendationSlide">
+                <img src="../Images/largeVideo2.png" alt="timeCard" />
+                <span class="timeCard">1:45</span>
+                <div>
+                  <h3>Moon Gazing</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>54k views</span>
+                      <span>4 months ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+              <div class="recommendationSlide">
+                <img src="../Images/largeVideo3.png" alt="timeCard"/>
+                <span class="timeCard">1:45</span>
+                <div>
+                  <h3>Moon Gazing</h3>
+                  <div class="meta">
+                    <div class="dateAndViews">
+                      <span>125k views</span>
+                      <span>4 months ago</span>
+                    </div>
+                    <span>Dollier Blair</span>
+                  </div>
+                </div>
+              </div>
+            </slider-scroll>
+          </div>
+        </section>
+        <section class="recChannel">
+          <div class="recMeta">
+            <div class="recChannelName">
+              <img src="../Images/channelCard.png" alt="channelIcon" />
+              <span class="Name">Food & Drink</span>
+              <span>Recommended channel for you</span>
+            </div>
+
+            <div class="subscription">
+              <button>Sumscribe 2.3m</button>
+              <span class="sliderButton">
+                <button id="prevRecArr" class="arrow">&lt;</button>
+                <button id="nextRecArr" class="arrow">&gt;</button>
+              </span>
+            </div>
+          </div>
+          <div id="container" class="container">
+            <slider-scroll
+              id="recVideoSlider"
+              class="slider-scroll videoSlider"
+            >
+              <div class="slide">
+                <img src="../Images/cone.png" alt="timeCard" />
+                <span class="timeCard">7:36</span>
+                <div>
+                  <h3>Astronomy Or Astrology</h3>
+                  <span>240k views</span>
+                  <span>4 month ago</span>
+                  <span>Food & Drink</span>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="../Images/cherry.png" alt="cherry video" />
+                <span class="timeCard">2:19</span>
+
+                <h3>Advertising Outdoors</h3>
+                <span>13k views</span>
+                <span>15 days ago</span><span>Food & Drink</span>
+              </div>
+              <div class="slide">
+                <img src="../Images/fork.png" alt="fork video" />
+                <span class="timeCard">9:05</span>
+                <h3>Radio Astronomy</h3>
+                <span>1k views</span><span>11 month ago</span
+                ><span>Food & Drink</span>
+              </div>
+              <div class="slide">
+                <img src="../Images/orange.png" alt="orange video" />
+                <span class="timeCard">3:40</span>
+                <h3>A Good Autoresponder</h3>
+                <span>45k views</span><span>2 months ago</span
+                ><span>Food & Drink</span>
+              </div>
+              <div class="slide">
+                <img src="../Images/donuts.png" alt="donuts video" />
+                <span class="timeCard">1:56</span>
+                <h3>Baby Monitor Technology</h3>
+                <span>86k views</span><span>7 days ago</span
+                ><span>Food & Drink</span>
+              </div>
+              <div class="slide">
+                <img src="../Images/whatermelon.png" alt="watermelon video" />
+                <span class="timeCard">4:45</span>
+                <h3>Asteroids</h3>
+                <span>123k views</span><span>4 months ago</span
+                ><span>Food & Drink</span>
+              </div>
+              <div class="slide">
+                <img src="../Images/orange.png" alt="orange video" />
+                <span class="timeCard">3:40</span>
+                <h3>A Good Autoresponder</h3>
+                <span>45k views</span><span>2 months ago</span
+                ><span>Food & Drink</span>
+              </div>
+              <div class="slide">
+                <img src="../Images/donuts.png" alt="donuts video" />
+                <span class="timeCard">1:56</span>
+                <h3>Baby Monitor Technology</h3>
+                <span>86k views</span><span>7 days ago</span
+                ><span>Food & Drink</span>
+              </div>
+              <div class="slide">
+                <img src="../Images/whatermelon.png" alt="watermelon video" />
+                <span class="timeCard">4:45</span>
+                <h3>Asteroids</h3>
+                <span>123k views</span><span>4 months ago</span
+                ><span>Food & Drink</span>
+              </div>
+            </slider-scroll>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="bottomNav">
+      <div class="navItem active">
+        <img src="../Images/home.png" alt="Home icon" />
+        <span>Home</span>
+      </div>
+      <div class="navItem">
+        <img src="../Images/trending.png" alt="Trending icon" />
+        <span>Trending</span>
+      </div>
+      <div class="navItem">
+        <img src="../Images/subscription.png" alt="Subscriptions icon" />
+        <span>Subscriptions</span>
+      </div>
+      <div class="navItem">
+        <img src="../Images/library.png" alt="Library icon" />
+        <span>Library</span>
+      </div>
+    </div>
+
+    <script type="module" src="../index.js"></script>
+    <script src="./homePage.js"></script>
+  </body>
+</html>
